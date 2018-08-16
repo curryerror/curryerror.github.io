@@ -29,11 +29,12 @@
    box-shadow: 5px 5px 2.5px #888888;
   }
    .row1{
- background-color:rgba(101,101,101,0.8);
+ background-color:rgb(101,101,101);
     color:white;
     margin:15px;
     padding:15px;
    text-align:center;
+   box-shadow: 5px 5px 2.5px #888888;
   }
   #thenceThen{
 	  background-color:#ff3d58;
@@ -59,7 +60,7 @@ function thenceThen(timespan){
  var hours=Math.floor((totalSecs-days*24*3600)/3600);
  var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
  var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
- document.getElementById("thenceThen").innerText="我们在一起的时间："+days+"天"+hours+"小时"+mins+"分钟"+secs+"秒";
+ document.getElementById("thenceThen").innerText="爱情计时器："+days+"天"+hours+"时"+mins+"分"+secs+"秒";
 }
 var clock;
 window.onload=function(){
@@ -90,38 +91,19 @@ window.onload=function(){
 
 <div class="container">
 <div class="row">
-  <div class="col-md-4">
+
     <h2>初识</h2>
     <p>London is the capital city of England.</p>
     <p>It is the most populous city in the United Kingdom,
     with a metropolitan area of over 13 million inhabitants.</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Paris</h2>
-    <p>Paris is the capital and most populous city of France.</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-    and the most populous metropolitan area in the world.</p>
-  </div>
+ 
 </div>
  <div class="row1">
-  <div class="col-md-4">
     <h2>London</h2>
     <p>London is the capital city of England.</p>
     <p>It is the most populous city in the United Kingdom,
     with a metropolitan area of over 13 million inhabitants.</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Paris</h2>
-    <p>Paris is the capital and most populous city of France.</p>
-  </div>
-  <div class="col-md-4">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
-    and the most populous metropolitan area in the world.</p>
-  </div>
+ 
 </div>
 </div>
 
