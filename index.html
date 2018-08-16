@@ -35,12 +35,36 @@
     padding:15px;
    text-align:center;
   }
-  </style>
+  #thenceThen{font-size:2em;}
+ </style>
  <title>三尺剑
  </title>
  <link rel="icon"  type="image/x-icon"  href="http://img.hb.aicdn.com/6b7a784216faba0514ad72f51e6cfd9a5913c6431578-kRcKEd_fw658"/>
  <link rel="bookmark" type="image/x-icon" href="http://img.hb.aicdn.com/6b7a784216faba0514ad72f51e6cfd9a5913c6431578-kRcKEd_fw658">
+  
+ <script type="text/javascript" language="javascript">
+function thenceThen(timespan){
+ var date1=new Date(timespan);
+ var totalSecs=(new Date()-date1)/1000;
+ var days=Math.floor(totalSecs/3600/24);
+ var hours=Math.floor((totalSecs-days*24*3600)/3600)-22;
+ var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60)-1359;
+ var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60))-81540;
+ document.getElementById("thenceThen").innerText="我们在一起的时间："+days+"天"+hours+"小时"+mins+"分钟"+secs+"秒";
+}
+var clock;
+window.onload=function(){
+ clock=self.setInterval("thenceThen('2014/12/21')", 500);
+}
+</script>
  </head>
+
+ <body>
+<div id="thenceThen"></div>
+</body>
+</html>
+<div id="thenceThen"></div>
+</body>
 
 <body>
 <div class="container">
