@@ -1,2 +1,2 @@
 # curryerror.github.io
-You have my sword.
+<a href="https://curryerror.github.io/" target="_blank">You have my sword.</a>
